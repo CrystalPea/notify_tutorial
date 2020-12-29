@@ -83,3 +83,4 @@ game/cache/
 *.rpymc
 game/saves/*
 log.txt
+game/saves/
