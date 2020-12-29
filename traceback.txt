@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 6, in script
+    define pg = Character("PG", "336699")
+  File "game/script.rpy", line 6, in <module>
+    define pg = Character("PG", "336699")
+TypeError: 'kind' is an invalid keyword argument for this function
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 6, in script
+    define pg = Character("PG", "336699")
+  File "/Users/peatyczynska/learning/renpy-7.3.5-sdk/renpy/ast.py", line 2108, in execute
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "/Users/peatyczynska/learning/renpy-7.3.5-sdk/renpy/python.py", line 2052, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 6, in <module>
+    define pg = Character("PG", "336699")
+  File "/Users/peatyczynska/learning/renpy-7.3.5-sdk/renpy/character.py", line 1445, in Character
+    return type(kind)(name, kind=kind, **properties)
+TypeError: 'kind' is an invalid keyword argument for this function
+
+Darwin-18.7.0-x86_64-i386-64bit
+Ren'Py 7.3.5.606
+Notify tutorial 1.0
+Tue Dec 29 16:38:45 2020
