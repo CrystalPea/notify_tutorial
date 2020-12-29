@@ -30,6 +30,40 @@ label start:
 
     pg "I call them PG tips, hahah :D"
 
-    # This ends the game.
+    jump main_menu
 
+
+label main_menu:
+    scene bg homepage
+    show pg smug at right
+
+    pg "So what would you like to do today?"
+    menu:
+        "Send bulk messages":
+            jump send_bulk
+
+        "Send an email":
+            jump send_one_email
+
+        "I'd like to quit for now":
+            jump end
+
+
+label send_bulk:
+    scene bg homepage
+    show pg smug at right
+
+    pg "Let's send many emails."
+    jump main_menu
+
+
+label send_one_email:
+    scene bg homepage
+    show pg smug at right
+
+    pg "Let's send one email."
+    jump main_menu
+
+
+label end:
     return
