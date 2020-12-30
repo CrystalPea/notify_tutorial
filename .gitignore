@@ -84,3 +84,4 @@ game/cache/
 game/saves/*
 log.txt
 game/saves/
+traceback.txt
