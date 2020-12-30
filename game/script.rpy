@@ -66,4 +66,4 @@ label send_one_email:
 
 
 label end:
-    return
+    $ renpy.quit()
